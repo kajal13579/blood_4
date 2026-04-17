@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Donation App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🩸 Blood Donation App</h1>
+
+<div class="container">
+
+    <h2>Add Donor</h2>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="blood" placeholder="Blood Group">
+    <input type="text" id="contact" placeholder="Contact">
+    <input type="text" id="location" placeholder="Location">
+
+    <button onclick="addDonor()">Add Donor</button>
+
+    <h2>Search</h2>
+    <input type="text" id="search" placeholder="Search by Blood Group" onkeyup="searchDonor()">
+
+    <h2>Donor List</h2>
+    <ul id="donorList"></ul>
+
+    <button onclick="logout()">Logout</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
